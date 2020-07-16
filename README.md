@@ -1,3 +1,3 @@
 # streetUproot2.0
 
-Making Street Children Financially Stable
+Making Street Children Financially Independent
