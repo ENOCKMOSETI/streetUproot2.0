@@ -1,42 +1,51 @@
 body {
-    background-color: darkolivegreen;
     margin: 0;
     align-content: center;
     text-align: center;
-    color: white;
+    --background-color: #ffffff;
+    --text-color: #000000;
     text-decoration: none;
 }
 
-.head h1{
+.head a{
     text-decoration: none;
+    list-style: none;
 }
-
+.head h1:hover{
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+    transition: all 0.2s ease-out; 
+}
 
 a {
-    color: white;
+    color: darkred;
 }
 
 .navbar {
-
     list-style: none;
-    text-align: center;
     display: inline;
+    align-content: center;
+}
+
+.mainNav li {
     margin: 0 auto;
+    display: inline;   
+    
 }
 
-.navItem {
-    text-decoration: none;
-    display: inline;
-
-}
-.navItem a:hover {
-    color: white;
-    transition: all 0.2s ease-out; 
-  }
-
-img {
+.mainNav .navItem a {
     width: 100%;
-    margin: 10px
+    text-decoration: none;
+}
+
+.navItem a:hover {
+    color: #333;
+    transition: all 0.2s ease-out; 
+}
+
+.street {
+    width: 80%;
 }
 
 .icons a:hover {
@@ -46,14 +55,13 @@ img {
 
 
 #about {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px;
     
 }
 
 .abt {
     margin-bottom: 50px;
-    text-align: end;
+    text-align: center;
 }
 
 #cardd {
@@ -111,17 +119,26 @@ img {
 
 }
 
-.images {
+.gallery {
     display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
+.images {
+    flex: 0 1 250px;
+    margin: 5px;
+    border-radius: 5%;
+    transition: all .2s ease-in-out;
+    
+}
+.images:hover { transform: scale(1.1); }
 
 #contact {
     margin-top: 20px;
     color: darkred;
+    margin-bottom: 10px;
 }
-
 
 .container {
     border-radius: 5px;
@@ -138,12 +155,10 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 768px) {
-    .col-md-6 {
-        
-        display: flex;
-        flex: 0 0 50%;
-        max-width: 50%;
+@media (max-width: 768px) {
+    #about {
+        padding: 0 ;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
-    
 }
