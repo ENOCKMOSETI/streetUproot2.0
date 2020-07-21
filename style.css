@@ -120,17 +120,27 @@ img {
 }
 
 .gallery {
-    display: flex;
+    /* display: -webkit-flex;
     flex-wrap: wrap;
-    justify-content: center;
+     */
+    line-height: 0;
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;
+  padding-left: 10px;
   }
 
 .images {
-    flex: 0 1 250px;
+    /* flex: 0 1 250px;
     margin: 5px;
+    transition: all .2s ease-in-out; */
     border-radius: 5%;
-    transition: all .2s ease-in-out;
-    
+    width: 100% !important;
+  height: auto !important;
 }
 .images:hover { transform: scale(1.1); }
 
